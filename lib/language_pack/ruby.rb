@@ -93,7 +93,7 @@ WARNING
     instrument 'ruby.compile' do
       # check for new app at the beginning of the compile
       new_app?
-      Dir.chdir(build_path)
+      Dir.chdir(build_path + 'backend_mr_cocktail')
       remove_vendor_bundle
       warn_bundler_upgrade
       install_ruby(slug_vendor_ruby, build_ruby_path)
